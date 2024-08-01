@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      table {
+        width: 100%;
+        border-collapse: collapse;
+      }
+      th,
+      td {
+        border: 1px solid black;
+        padding: 5px;
+      }
+      th {
+        background-color: bisque;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Danh sách sản phẩm</h1>
+    <table>
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Tên sản phẩm</th>
+          <th>Giá</th>
+          <th>Số lượng</th>
+          <th>Hành động</th>
+        </tr>
+      </thead>
+      <tbody id="product-table"></tbody>
+    </table>
+    <hr />
+    <h1>Thêm sản phẩm</h1>
+    <div>
+      <label for="">ID</label>
+      <input type="text" id="id-product" />
+    </div>
+    <div>
+      <label for="">Tên sản phẩm</label>
+      <input type="text" id="name-product" />
+    </div>
+    <div>
+      <label for="">Giá sản phẩm</label>
+      <input type="text" id="price-product" />
+    </div>
+    <div>
+      <label for="">Số lượng</label>
+      <input type="text" id="quantity-product" />
+    </div>
+    <button onclick="addProduct()">Thêm sản phẩm</button>
+    <script src="main.js"></script>
+  </body>
+</html>
